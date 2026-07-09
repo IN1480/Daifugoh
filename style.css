@@ -1,3 +1,83 @@
-.title {
-    color: #02ccba;
-}  
+/* ===== 共通 ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== 画面共通 ===== */
+.screen{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+/* ==== タイトル画面 ==== */
+#title-screen{
+    flex-direction: column;/* 配置を縦方向に変更 */
+}
+
+/* ==== ゲーム画面 ==== */
+#game-screen{
+    background-color: green;
+}
+
+.hidden{
+    display: none;
+}
+
+body{
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+}
+
+#game-title{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#start-button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 2rem;/* ボタンの文字サイズ */
+    padding: 20px 60px;/* 文字から外枠までの余白 */
+    border: none;/* 枠の黒線除去 */
+    border-radius: 15px;/* 枠の角を丸く */
+    background-color: #0f6512;/* ボタンの色 */
+    color: white;/* ボタンの文字色 */
+    cursor: pointer;/* ボタンに置いたときのカーソルの形 */
+    transition: 0.2s;/* 画面遷移の猶予 */
+}
+#start-button:hover{
+    background-color: #45a049;/* ボタンにカーソルを置いたときのボタンの色 */
+}
+
+#start-button:active{
+    transform: scale(0.96);/* ホバー時のボタンの縮み */
+}
+
+/* ===== カード ===== */
+
+.card {
+
+}
+
+.card.selected {
+
+}
+
+/* ===== ボタン ===== */
+
+.button {
+
+}
