@@ -1,0 +1,21 @@
+/*
+ゲーム画面全体
+各エリアの配置
+*/
+
+#game-screen{
+    background-color: green;
+}
+
+#field {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 50%;
+    height: 30%;
+    transform: translate(-50%, -50%);
+
+    background-color: #0a4a0a;
+
+    gap: -10px;
+}

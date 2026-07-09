@@ -1,0 +1,41 @@
+/*
+body
+フォント
+共通ボタン
+.hidden
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+}
+
+.screen{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hidden{
+    display: none;
+}
