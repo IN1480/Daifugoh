@@ -20,6 +20,7 @@
 /* ==== タイトル画面 ==== */
 #title-screen{
     flex-direction: column;/* 配置を縦方向に変更 */
+    background-color: #093b67;
 }
 
 /* ==== ゲーム画面 ==== */
@@ -42,6 +43,15 @@ body{
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
+
+    font-size: 64px;
+    font-weight: bold;
+    color: gold;
+    -webkit-text-stroke: 2px #8b0000;
+
+    text-shadow:
+        0 4px 0 #5c0000,
+        0 8px 12px rgba(0,0,0,0.5);
 }
 #start-button{
     position: absolute;
@@ -49,14 +59,16 @@ body{
     left: 50%;
     transform: translateX(-50%);/* 自身の大きさの半分だけ左に；中央に置くため */
 
-    font-size: 2rem;/* ボタンの文字サイズ */
-    padding: 20px 60px;/* 文字から外枠までの余白 */
     border: none;/* 枠の黒線除去 */
     border-radius: 15px;/* 枠の角を丸く */
     background: linear-gradient(#1ac20e, #136808);/* グラデーション；立体感 */
     box-shadow: 0 6px 0 #0a3803;/* 影；立体感 */
     
+    font-size: 2rem;/* ボタンの文字サイズ */
     color: white;/* ボタンの文字色 */
+    text-shadow: 0 2px 0 #969696;/* 文字の影 */
+    padding: 20px 60px;/* 文字から外枠までの余白 */
+
     cursor: pointer;/* ボタンに置いたときのカーソルの形 */
     transition: 0.4s;/* 画面遷移の猶予 */
 }
@@ -66,7 +78,7 @@ body{
 
 #start-button:active{
     transform: translateX(-50%) scale(0.98) translateY(4px);/* ホバー時のボタンの縮み */
-    box-shadow: 0 2px 0 #0056b3;/* 影を小さく */
+    box-shadow: 0 2px 0 #0a3803;/* 影を小さく */
 }
 
 /* ===== カード ===== */
