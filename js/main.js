@@ -10,9 +10,7 @@ import { startGame } from "./game.js";
 const title = document.getElementById("title-screen");
 const game = document.getElementById("game-screen");
 
-/*
 const input = document.getElementById("name-input");
-*/
 const startButton = document.getElementById("start-button");
 
 
