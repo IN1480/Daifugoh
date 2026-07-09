@@ -44,10 +44,10 @@ body{
     left: 50%;
     transform: translateX(-50%);
 
+    font-family: serif;
     font-size: 64px;
     font-weight: bold;
     color: gold;
-    -webkit-text-stroke: 2px #8b0000;
 
     text-shadow:
         0 4px 0 #5c0000,
