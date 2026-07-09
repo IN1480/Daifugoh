@@ -21,7 +21,7 @@
     left: 50%;
     width: 60%;
     height: 20%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
 
     background-color: #0a4a0a;
 }

@@ -10,27 +10,34 @@
         <link rel="stylesheet" href="css/game.css">
         <link rel="stylesheet" href="css/card.css">
         <!-- JSとの連携 -->
-        <script src="js/main.js" defer></script>
+        <script type="module" src="js/main.js"></script>
     </head>
 
     <body>
         <!-- タイトル画面 -->
         <div id="title-screen" class="screen">
             <h1 id="title">Local 大富豪</h1>
-            <br>
+
+            <input
+                id="name-input"
+                type="text"
+                placeholder="プレイヤー名を入力"
+                maxlength="12"
+                spellcheck="false">
+
             <button id="start-button">スタート</button>
         </div>
 
         <!-- ゲーム画面 -->
         <div id="game-screen" class="screen hidden">
             <!-- 場 -->
-            <div id="field">
+            <div id="field" class="area">
                 <!-- 出されたカードを表示 -->
             </div>
 
-
             <!-- プレイヤー領域 -->
-            <div id="player-area">
+            <div id="player-area" class="area">
+                <div id="player-name"></div>
 
                 <div id="hand">
                     <!-- 手札カード -->
