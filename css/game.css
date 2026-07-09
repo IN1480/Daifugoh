@@ -4,20 +4,37 @@
 
 #field {
     position: absolute;
-    top: 60%;
+    top: 30%;
     left: 50%;
+    width: 400px;
+    height: 300px;
     transform: translateX(-50%);
-    background-color: rgb(10, 74, 10);
 
-
-    width: 1000px;
-    height: 200px;
+    background-color: #0a4a0a;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     gap: 10px;
+}
+@media (max-width: 768px) {
+    #field {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        width: 250px;
+        height: 180px;
+        transform: translateX(-50%);
+
+        background-color: #0a4a0a;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+    }
 }
 
 #player-area {
