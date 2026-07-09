@@ -18,7 +18,6 @@
         0 4px 0 #5c0000,
         0 8px 12px rgba(0,0,0,0.5);
 }
-
 @media (max-width: 768px) {
     #title{
         position: absolute;
@@ -27,13 +26,13 @@
         transform: translateX(-50%);
 
         font-family: serif;
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         font-weight: bold;
         color: gold;
 
         text-shadow:
-            0 4px 0 #5c0000,
-            0 8px 12px rgba(0,0,0,0.5);
+            0 3px 0 #5c0000,
+            0 6px 12px rgba(0,0,0,0.5);
     }
 }
 
@@ -48,9 +47,11 @@
     background: linear-gradient(#1ac20e, #136808);/* グラデーション；立体感 */
     box-shadow: 0 6px 0 #0a3803;/* 影；立体感 */
     
-    font-size: 2rem;/* ボタンの文字サイズ */
+    font-size: 1.8rem;/* ボタンの文字サイズ */
     color: white;/* ボタンの文字色 */
-    text-shadow: 0 2px 0 #969696;/* 文字の影 */
+    text-shadow:
+        0 2px 0 #969696,/* 文字の影 */
+        0 8px 12px rgba(0,0,0,0.5);
     padding: 20px 60px;/* 文字から外枠までの余白 */
 
     cursor: pointer;/* ボタンに置いたときのカーソルの形 */

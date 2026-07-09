@@ -23,6 +23,12 @@ body{
     left: 0;
 }
 
+.area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hidden{
     display: none;
 }
