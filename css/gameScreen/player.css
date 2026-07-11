@@ -1,0 +1,28 @@
+/* player.css */
+
+#player-name{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-50%);
+
+    font-weight: bold;
+    color: white;
+
+    text-shadow:
+        0 2px 0 #5c0000,
+        0 6px 12px rgba(0,0,0,0.5);
+}
+
+#play-button{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+
+#hand{
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+}

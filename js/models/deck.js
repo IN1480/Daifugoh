@@ -1,5 +1,2 @@
-/*
-山札生成
-シャッフル
-配る
-*/
+// deck.js
+import { Card } from "./card";

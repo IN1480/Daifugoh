@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ja">
     <head>
@@ -6,10 +7,18 @@
         <title>Local大富豪</title>
         <!-- CSSとの連携 -->
         <link rel="stylesheet" href="./css/common.css">
-        <link rel="stylesheet" href="./css/title.css">
-        <link rel="stylesheet" href="./css/game.css">
-        <link rel="stylesheet" href="./css/player.css">
         <link rel="stylesheet" href="./css/card.css">
+
+        <link rel="stylesheet" href="./css/titleScreen/titleScreen.css">
+
+        <link rel="stylesheet" href="./css/gameScreen/gameScreen.css">
+        <link rel="stylesheet" href="./css/gameScreen/field.css">
+        <link rel="stylesheet" href="./css/gameScreen/info.css">
+        <link rel="stylesheet" href="./css/gameScreen/player.css">
+        <link rel="stylesheet" href="./css/screen/ruleScreen.css">
+
+        <link rel="stylesheet" href="./css/ruleScreen/ruleScreen.css">
+
         <!-- JSとの連携 -->
         <script type="module" src="./js/main.js"></script>
     </head>
@@ -27,10 +36,20 @@
                 spellcheck="false">
 
             <button id="start-button">スタート</button>
+            <button id="rule-button">ルール設定</button>
         </div>
 
         <!-- ゲーム画面 -->
         <div id="game-screen" class="screen hidden">
+            <!-- インフォメーションエリア -->
+            <div id="info-area" class="area">
+                <div id="turn"></div>
+
+                <div id="other-players"></div>
+
+                <div id="field-effect"></div>
+            </div>
+
             <!-- 場 -->
             <div id="field" class="area">
                 <!-- 出されたカードを表示 -->
@@ -49,6 +68,15 @@
                 </button>
 
             </div>
+        </div>
+
+        <div id="rule-screen" class="screen hidden">
+            <button id="apply-button">OK</button>
+        </div>
+
+        <!-- リザルト画面 -->
+        <div id="result-screen" class="screen hidden">
+
         </div>
     </body>
 </html>
