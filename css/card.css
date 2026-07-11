@@ -3,7 +3,7 @@
 .card{
     position: relative;
 
-    width: clamp(25px, 4vw, 60px);
+    width: clamp(30px, 4vw, 60px);
     aspect-ratio: 2 / 3;
 
     background-color: white;
@@ -14,6 +14,11 @@
     font-size: 1vw;
 
     cursor: pointer;
+}
+@media (max-width: 600px) {
+    .card {
+        width: clamp(30px, 7vw, 60px);
+    }
 }
 
 /* トランプのマーク・数字の位置 */
