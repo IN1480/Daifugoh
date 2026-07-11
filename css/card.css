@@ -15,12 +15,6 @@
 
     cursor: pointer;
 }
-@media (max-width: 600px) {
-    .card {
-        width: clamp(30px, 7vw, 60px);
-        font-size: 2vw;
-    }
-}
 
 /* トランプのマーク・数字の位置 */
 .corner {
@@ -40,6 +34,12 @@
     text-align: center;
     
     font-size: clamp(8px, 1vw, 15px)
+}
+@media (max-width: 600px) {
+    .card {
+        width: clamp(30px, 7vw, 60px);
+        font-size: 2vw;
+    }
 }
 
 .card.selected{
