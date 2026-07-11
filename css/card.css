@@ -3,7 +3,7 @@
 .card{
     position: relative;
 
-    width: clamp(20px, 4vw, 60px);
+    width: clamp(25px, 4vw, 60px);
     aspect-ratio: 2 / 3;
 
     background-color: white;
