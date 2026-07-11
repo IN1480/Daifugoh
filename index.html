@@ -5,17 +5,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Local大富豪</title>
+
         <!-- CSSとの連携 -->
         <link rel="stylesheet" href="./css/common.css">
         <link rel="stylesheet" href="./css/card.css">
+        <link rel="stylesheet" href="./css/button.css">
 
         <link rel="stylesheet" href="./css/titleScreen/titleScreen.css">
 
         <link rel="stylesheet" href="./css/gameScreen/gameScreen.css">
-        <link rel="stylesheet" href="./css/gameScreen/field.css">
-        <link rel="stylesheet" href="./css/gameScreen/info.css">
-        <link rel="stylesheet" href="./css/gameScreen/player.css">
-        <link rel="stylesheet" href="./css/screen/ruleScreen.css">
+        <link rel="stylesheet" href="./css/gameScreen/fieldArea.css">
+        <link rel="stylesheet" href="./css/gameScreen/infoArea.css">
+        <link rel="stylesheet" href="./css/gameScreen/playerArea.css">
 
         <link rel="stylesheet" href="./css/ruleScreen/ruleScreen.css">
 
@@ -35,8 +36,8 @@
                 maxlength="12"
                 spellcheck="false">
 
-            <button id="start-button">スタート</button>
-            <button id="rule-button">ルール設定</button>
+            <button id="start-button" class="button">スタート</button>
+            <button id="rule-button" class="button">ルール設定</button>
         </div>
 
         <!-- ゲーム画面 -->
@@ -57,21 +58,22 @@
 
             <!-- プレイヤー領域 -->
             <div id="player-area" class="area">
-                <div id="player-name"></div>
 
                 <div id="hand">
                     <!-- 手札カード -->
                 </div>
 
-                <button id="play-button">
+                <button id="play-button" class="button">
                     出す
                 </button>
-
             </div>
+            
+            <button id="back-to-title-button" class="button">タイトル</button>
+            <div id="player-name"></div>
         </div>
 
         <div id="rule-screen" class="screen hidden">
-            <button id="apply-button">OK</button>
+            <button id="apply-button" class="button">OK</button>
         </div>
 
         <!-- リザルト画面 -->

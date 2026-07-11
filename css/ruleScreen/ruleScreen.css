@@ -1,33 +1,4 @@
 /* ruleScreen.css */
-/* タイトル行きボタン */
-#apply-button{
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    width: clamp(100px, 30vw, 200px);
-    height: 60px;
-    transform: translateX(-50%);/* 自身の大きさの半分だけ左に；中央に置くため */
-
-    border: none;/* 枠の黒線除去 */
-    border-radius: 15px;/* 枠の角を丸く */
-    background: linear-gradient(#260ec2, #1d0868);/* グラデーション；立体感 */
-    box-shadow: 0 6px 0 #080338;/* 影；立体感 */
-    
-    font-size: clamp(1.1rem, 4vw, 1.7rem);/* ボタンの文字サイズ */
-    color: white;/* ボタンの文字色 */
-    text-shadow:
-        0 2px 0 #969696,/* 文字の影 */
-        0 8px 12px rgba(0,0,0,0.5);
-
-    cursor: pointer;/* ボタンに置いたときのカーソルの形 */
-    transition: 0.4s;/* 画面遷移の猶予 */
-}
-
-#apply-button:hover{
-    background-color: #4b45a0;/* ボタンにカーソルを置いたときのボタンの色 */
-}
-
-#apply-button:active{
-    transform: translateX(-50%) scale(0.98) translateY(4px);/* ホバー時のボタンの縮み */
-    box-shadow: 0 2px 0 #080338;/* 影を小さく */
+#rule-screen{
+    background-color: #5f65c4;
 }

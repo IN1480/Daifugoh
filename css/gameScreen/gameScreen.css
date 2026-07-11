@@ -3,17 +3,30 @@
     background-color: green;
 }
 
+#player-name{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(10%, -30%);
+
+    color: black;
+
+    background: white;
+    padding: 0px 5px;
+
+    border: 2px solid #888;
+    border-radius: 12px;
+}
+
 #info-area{
     position: absolute;
-    top: 40%;
+    top: 10%;
     left: 50%;
-    width: clamp(100px, 70%, 500px);
-    height: 40%;
+    width: clamp(120px, 80%, 600px);
+    height: 20%;
     transform: translate(-50%, -50%);
 
-    background-color: #0a4a0a;
-
-    border-radius: 50%;
+    background-color: rgb(10,74,10);
 }
 
 #field{
@@ -24,7 +37,7 @@
     height: 40%;
     transform: translate(-50%, -50%);
 
-    background-color: #0a4a0a;
+    background-color: rgb(10,74,10);
 
     border-radius: 50%;
 

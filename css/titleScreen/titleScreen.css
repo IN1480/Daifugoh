@@ -1,7 +1,6 @@
 /* titleScreen.css */
 #title-screen{
-    flex-direction: column;/* 配置を縦方向に変更 */
-    background-color: #5f65c4;
+    background-color: rgb(95,101,212);
 }
 
 #title{
@@ -16,74 +15,35 @@
     color: gold;
 
     text-shadow:
-        0 3px 0 #5c0000,
+        0 3px 0 rgb(92,0,0),
         0 6px 12px rgba(0,0,0,0.5);
 }
 
+#name-input{
+    width: clamp(120px, 40%, 300px);
+    padding: 10px 15px;
 
-/* スタートボタン */
-#start-button{
-    position: absolute;
-    bottom: 16%;
-    left: 50%;
-    width: clamp(100px, 30vw, 200px);
-    height: 60px;
-    transform: translateX(-50%);/* 自身の大きさの半分だけ左に；中央に置くため */
+    font-size: 1rem;
 
-    border: none;/* 枠の黒線除去 */
-    border-radius: 15px;/* 枠の角を丸く */
-    background: linear-gradient(#1ac20e, #136808);/* グラデーション；立体感 */
-    box-shadow: 0 6px 0 #0a3803;/* 影；立体感 */
-    
-    font-size: clamp(1.1rem, 4vw, 1.7rem);/* ボタンの文字サイズ */
-    color: white;/* ボタンの文字色 */
-    text-shadow:
-        0 2px 0 #969696,/* 文字の影 */
-        0 8px 12px rgba(0,0,0,0.5);
+    border: 2px solid #888;
+    border-radius: 12px;
 
-    cursor: pointer;/* ボタンに置いたときのカーソルの形 */
-    transition: 0.4s;/* 画面遷移の猶予 */
+    background: linear-gradient(#ffffff, #e8e8e8);
+
+    box-shadow:
+        inset 0 2px 4px rgba(0,0,0,0.15),
+        0 2px 6px rgba(0,0,0,0.2);
+
+    outline: none;
 }
+#name-input:focus {
+    border-color: rgb(218, 185, 2);
 
-#start-button:hover{
-    background-color: #45a049;/* ボタンにカーソルを置いたときのボタンの色 */
+    box-shadow:
+        0 0 5px rgba(255,215,0,0.7),
+        inset 0 2px 4px rgba(0,0,0,0.15);
 }
-
-#start-button:active{
-    transform: translateX(-50%) scale(0.98) translateY(4px);/* ホバー時のボタンの縮み */
-    box-shadow: 0 2px 0 #0a3803;/* 影を小さく */
-}
-
-
-/* ルール設定ボタン */
-#rule-button{
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    width: clamp(100px, 30vw, 200px);
-    height: 60px;
-    transform: translateX(-50%);/* 自身の大きさの半分だけ左に；中央に置くため */
-
-    border: none;/* 枠の黒線除去 */
-    border-radius: 15px;/* 枠の角を丸く */
-    background: linear-gradient(#260ec2, #1d0868);/* グラデーション；立体感 */
-    box-shadow: 0 6px 0 #080338;/* 影；立体感 */
-    
-    font-size: clamp(1.1rem, 4vw, 1.7rem);/* ボタンの文字サイズ */
-    color: white;/* ボタンの文字色 */
-    text-shadow:
-        0 2px 0 #969696,/* 文字の影 */
-        0 8px 12px rgba(0,0,0,0.5);
-
-    cursor: pointer;/* ボタンに置いたときのカーソルの形 */
-    transition: 0.4s;/* 画面遷移の猶予 */
-}
-
-#rule-button:hover{
-    background-color: #4b45a0;/* ボタンにカーソルを置いたときのボタンの色 */
-}
-
-#rule-button:active{
-    transform: translateX(-50%) scale(0.98) translateY(4px);/* ホバー時のボタンの縮み */
-    box-shadow: 0 2px 0 #080338;/* 影を小さく */
+#name-input::placeholder {
+    color: #888;
+    font-style: italic;
 }

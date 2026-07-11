@@ -8,7 +8,7 @@ const applyButton = document.getElementById("apply-button");
 
 export function initRule(){
     applyButton.addEventListener("pointerup", () => {
-    // 画面切り替え
-    screenManager(rule, title);
+        // 画面切り替え
+        screenManager(rule, title);
     });
 }
