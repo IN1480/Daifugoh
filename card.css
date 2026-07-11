@@ -1,0 +1,49 @@
+/* card.css */
+
+.card{
+    position: relative;
+
+    width: clamp(30px, 4vw, 60px);
+    aspect-ratio: 2 / 3;
+
+    background-color: white;
+
+    border-radius: 3px;
+    border: 1px solid black;
+
+    font-size: 1vw;
+
+    cursor: pointer;
+}
+
+/* トランプのマーク・数字の位置 */
+.corner {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+/* マーク・数字の確保する幅 */
+.suit,
+.rank {
+    width: 2ch;
+    text-align: center;
+    
+    font-size: clamp(8px, 1vw, 15px)
+}
+
+.card.selected{
+    transform: translateY(-20px);
+}
+
+#hand .card{
+    margin-left: -5px;
+}
+
+#hand .card:first-child{
+    margin-left: 0;
+}
