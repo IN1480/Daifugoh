@@ -1,6 +1,6 @@
 // card.js
 export class Card {
-    constructor(id=null, suit, rank) {
+    constructor(id, suit, rank) {
         this.id = id;
         this.suit = suit;
         this.rank = rank;

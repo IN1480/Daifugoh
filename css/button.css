@@ -7,9 +7,6 @@
     color: white;/* ボタンの文字色 */
     box-shadow: 0 4px 0 color-mix(in srgb, var(--button-color) 30%, black);/* 影；立体感 */
 
-    text-shadow:
-        0 2px 0 rgb(120,120,120),/* 文字の影 */
-        0 8px 12px rgba(0,0,0,0.5);
 
     cursor: pointer;/* ボタンに置いたときのカーソルの形 */
     transition: 0.4s;/* 画面遷移の猶予 */
@@ -70,17 +67,17 @@
 
 /* カード出すボタン */
 #play-button{
-    --button-color: rgb(8, 151, 191);
+    --button-color: rgb(75, 74, 74);
     right: 30px;
-    bottom: 20px;
+    bottom: 4%;
     width: clamp(30px, 6vw, 40px);
     height: 20px;
-    transform: translateX(-50%);/* 自身の大きさの半分だけ左に；中央に置くため */
+    transform: translate(-50%, -30%);/* 自分のサイズ参照で位置調整 */
 
     font-size: clamp(0.5rem, 1.4vw, 0.8rem);/* ボタンの文字サイズ */
 }
 #play-button:active{
-    transform: translateX(-50%) scale(0.99) translateY(4px);/* ホバー時のボタンの縮み */
+    transform: translate(-50%, -30%) scale(0.99) translateY(4px);/* ホバー時のボタンの縮み */
 }
 
 /*=== ルール設定画面 ===*/

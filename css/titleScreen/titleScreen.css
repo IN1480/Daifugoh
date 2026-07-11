@@ -20,6 +20,10 @@
 }
 
 #name-input{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
     width: clamp(120px, 40%, 300px);
     padding: 10px 15px;
 
