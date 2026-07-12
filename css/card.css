@@ -3,7 +3,7 @@
 .card{
     position: relative;
 
-    width: clamp(30px, 4vw, 60px);
+    width: clamp(30px, 7vw, 60px);
     aspect-ratio: 2 / 3;
 
     background-color: white;
@@ -37,8 +37,7 @@
 }
 @media (max-width: 600px) {
     .card {
-        width: clamp(30px, 7vw, 60px);
-        font-size: 2vw;
+        font-size: 1.9vw;
     }
 }
 

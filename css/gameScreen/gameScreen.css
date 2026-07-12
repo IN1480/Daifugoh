@@ -5,6 +5,26 @@
     background-position: center;
 }
 
+#info-area{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: clamp(120px, 80%, 600px);
+    height: 20%;
+    transform: translate(-50%, -50%);
+
+    background-color: aliceblue;
+}
+
+#player-area{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 60%;
+    height: 30%;
+    transform: translateX(-50%);
+}
+
 #player-name{
     position: absolute;
     left: 0;
@@ -18,36 +38,4 @@
 
     border: 2px solid #888;
     border-radius: 12px;
-}
-
-#info-area-frame{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    width: clamp(120px, 80%, 600px);
-    height: 20%;
-    transform: translate(-50%, -50%);
-}
-
-#field-frame{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: clamp(100px, 70%, 500px);
-    height: 40%;
-    transform: translate(-50%, -50%);
-
-    background-color: rgb(10,74,10);
-
-    border-radius: 50%;
-    gap: -5px;
-}
-
-#player-area{
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    width: 60%;
-    height: 30%;
-    transform: translateX(-50%);
 }

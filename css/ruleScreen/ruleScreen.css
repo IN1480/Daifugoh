@@ -1,4 +1,6 @@
 /* ruleScreen.css */
 #rule-screen{
-    background-color: #5f65c4;
+    background-image: url(../../images/background/green_diamond_PC.jpg);
+    background-size: cover;
+    background-position: center;
 }
