@@ -96,10 +96,10 @@
     bottom: 4%;
 }
 /* パスボタン */
-#play-button{
+#pass-button{
     position: static;
 
-    --button-color: rgb(123, 2, 2);
+    --button-color: rgb(32, 2, 123);
     width: clamp(45px, 6vw, 55px);
     height: 40px;
 
@@ -110,7 +110,7 @@
     transform: scale(0.99) translateY(4px);/* ホバー時のボタンの縮み */
 }
 /* カード出すボタン */
-#pass-button{
+#play-button{
     position: static;
 
     --button-color: rgb(123, 2, 2);

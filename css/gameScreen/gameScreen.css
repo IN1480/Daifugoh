@@ -1,8 +1,6 @@
 /* gameScreen.css */
 #game-screen{
     background-image: url(../../images/background/green_diamond_PC.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 #info-area{
@@ -13,7 +11,9 @@
     height: 20%;
     transform: translate(-50%, -50%);
 
-    background-color: aliceblue;
+    background-color: rgb(213, 207, 207);
+    border: 8px solid black;
+    border-radius: 15px;/* 枠の角を丸く */
 }
 
 #player-area{

@@ -36,5 +36,13 @@ export function startGame(playerName){
 
     renderHand(player);
 
+    const gameButtonArea = document.getElementById("game-button-area");
     const currentPlayer = getCurrentPlayer(players);
+
+    if(currentPlayer === player){
+        gameButtonArea.classList.remove("hidden")
+    }
+    else{
+        gameButtonArea.classList.add("hidden")
+    }
 }

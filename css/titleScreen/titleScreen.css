@@ -1,8 +1,6 @@
 /* titleScreen.css */
 #title-screen{
     background-image: url("../../images/background/black_red_check_PC.jpg");
-    background-size: cover;
-    background-position: center;
 }
 @media (max-width: 600px) {
     #title-screen{

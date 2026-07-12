@@ -16,10 +16,24 @@ body{
     height: 100vh;
 
     position: relative;
+
+    background-size: cover;
+    background-position: center;
 }
 
-.area{
-    position: relative;
+.player-box {
+    width: 120px;
+    height: 70px;
+
+    background: rgba(0,0,0,0.6);
+    color:white;
+
+    border-radius:10px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
 .wood-like {

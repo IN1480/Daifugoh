@@ -1,14 +1,20 @@
-/*
-手札表示
-場のカード表示
-プレイヤー名表示
-CPUの手札枚数表示
-順位表示
-メッセージ表示
-*/
+// playerUI.js
+export function createPlayerBox(player, parent) {
+    const box = document.createElement("div");
+    box.classList.add("player-box");
 
-const playerName = document.getElementById("player-name");
+    const name = document.createElement("div");
+    name.classList.add("player-name");
+    name.textContent = player.name;
 
-export function showPlayerName(player) {
-    playerName.textContent = player.name;
+    const count = document.createElement("div");
+    count.classList.add("card-count");
+    count.textContent = `残り ${player.hand.length} 枚`;
+
+    box.appendChild(name);
+    box.appendChild(count);
+
+    parent.appendChild(box);
+
+    return box;
 }

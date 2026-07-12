@@ -7,9 +7,6 @@
         <title>Local大富豪</title>
 
         <!-- CSSとの連携 -->
-        <link rel="stylesheet" href="./css/common.css">
-        <link rel="stylesheet" href="./css/card.css">
-        <link rel="stylesheet" href="./css/button.css">
 
         <link rel="stylesheet" href="./css/titleScreen/titleScreen.css">
 
@@ -20,16 +17,22 @@
 
         <link rel="stylesheet" href="./css/ruleScreen/ruleScreen.css">
 
+        <link rel="stylesheet" href="./css/card.css">
+        <link rel="stylesheet" href="./css/button.css">
+        <link rel="stylesheet" href="./css/common.css">
+
         <!-- JSとの連携 -->
         <script type="module" src="./js/main.js"></script>
 
-        <!-- タイトル画像の先読み -->
-        <link rel="preload" as="image" href="images/background/black_red_check_PC.jpg">
-        <link rel="preload" as="image" href="images/background/black_red_check_Phone.jpg">
+        <!-- 画像の先読み -->
+        <link rel="preload" as="image" href="images/background/black_red_check_PC.jpg" media="(min-width:601px)">
+        <link rel="preload" as="image" href="images/background/black_red_check_Phone.jpg" media="(max-width:600px)">
+        <link rel="preload" as="image" href="images/background/green_diamond_PC.jpg">
+        <link rel="preload" as="image" href="images/grass.jpg">
     </head>
 
     <body>
-        <!-- タイトル画面 -->
+        <!--=== タイトル画面 ===-->
         <div id="title-screen" class="screen">
             <h1 id="title">Local 大富豪</h1>
 
@@ -48,7 +51,7 @@
             <button id="rule-button" class="button">ルール設定</button>
         </div>
 
-        <!-- ゲーム画面 -->
+        <!--=== ゲーム画面 ===-->
         <div id="game-screen" class="screen hidden">
             <!-- インフォメーションエリア -->
             <div id="info-area" class="area">
@@ -69,13 +72,11 @@
             <!-- プレイヤー領域 -->
             <div id="player-area" class="area">
 
-                <div id="hand">
-                    <!-- 手札カード -->
-                </div>
+                <div id="hand"></div><!-- 手札カード -->
 
-                <div id="game-button-area" class="button-area">
-                    <button id="play-button" class="button">出す</button>
+                <div id="game-button-area" class="button-area hidden">
                     <button id="pass-button" class="button">パス</button>
+                    <button id="play-button" class="button">出す</button>
                 </div>
             </div>
             
@@ -83,11 +84,12 @@
             <div id="player-name"></div>
         </div>
 
+        <!--=== ルール設定画面 ===-->
         <div id="rule-screen" class="screen hidden">
             <button id="apply-button" class="button">OK</button>
         </div>
 
-        <!-- リザルト画面 -->
+        <!--=== リザルト画面 ===-->
         <div id="result-screen" class="screen hidden">
 
         </div>
