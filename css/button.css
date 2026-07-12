@@ -1,3 +1,4 @@
+/*=== 共通 ===*/
 .button{
     position: absolute;
 
@@ -18,20 +19,44 @@
     box-shadow: 0 2px 0 color-mix(in srgb, var(--button-color) 30%, black);/* 影を小さく */
 }
 
-/*=== タイトル画面 ===*/
-/* スタートボタン */
-#start-button{
-    --button-color: rgb(26, 210, 14);
-    bottom: 16%;
+.button-area {
+    position: absolute;
     left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 5px;
+}
+
+/*=== タイトル画面 ===*/
+#title-button-area{
+    bottom: 16%;
+}
+/* スタートボタン */
+#start-solo-button{
+    position: static;
+
+    --button-color: rgb(26, 210, 14);
     width: clamp(100px, 30vw, 200px);
     height: 60px;
-    transform: translateX(-50%);/* 自分のサイズ参照で位置調整 */
     
     font-size: clamp(1.1rem, 4vw, 1.7rem);/* ボタンの文字サイズ */
 }
-#start-button:active{
-    transform: translateX(-50%) scale(0.99) translateY(4px);/* ホバー時のボタンの縮み */
+#start-solo-button:active{
+    transform: scale(0.99) translateY(4px);/* ホバー時のボタンの縮み */
+}
+
+#start-multi-button{
+    position: static;
+
+    --button-color: rgb(26, 210, 14);
+    width: clamp(100px, 30vw, 200px);
+    height: 60px;
+    
+    font-size: clamp(1.1rem, 4vw, 1.7rem);/* ボタンの文字サイズ */
+}
+#start-multi-button:active{
+    transform: scale(0.99) translateY(4px);/* ホバー時のボタンの縮み */
 }
 
 /* ルール設定ボタン */
@@ -52,32 +77,51 @@
 /*=== ゲーム画面 ===*/
 /* タイトル行きボタン */
 #back-to-title-button{
-    --button-color: rgb(75, 74, 74);
+    --button-color: rgb(123, 2, 2);
     top: 0%;
     left: 0%;
     width: clamp(60px, 6vw, 100px);
     height: 30px;
     transform: translate(10%, 30%);/* 自分のサイズ参照で位置調整 */
 
+    color: rgb(224, 231, 9);/* ボタンの文字色 */
     font-size: clamp(0.7rem, 1.2vw, 0.9rem);/* ボタンの文字サイズ */
 }
 #back-to-title-button:active{
     transform: translate(10%, 30%) scale(0.99) translateY(4px);/* ホバー時のボタンの縮み */
 }
 
-/* カード出すボタン */
+/* ゲームボタンエリア */
+#game-button-area{
+    bottom: 4%;
+}
+/* パスボタン */
 #play-button{
-    --button-color: rgb(75, 74, 74);
-    right: 30px;
-    bottom: 2%;
+    position: static;
+
+    --button-color: rgb(123, 2, 2);
     width: clamp(45px, 6vw, 55px);
     height: 40px;
-    transform: translate(-50%, -30%);/* 自分のサイズ参照で位置調整 */
 
+    color: rgb(224, 231, 9);/* ボタンの文字色 */
     font-size: clamp(0.7rem, 1.4vw, 0.8rem);/* ボタンの文字サイズ */
 }
 #play-button:active{
-    transform: translate(-50%, -30%) scale(0.99) translateY(4px);/* ホバー時のボタンの縮み */
+    transform: scale(0.99) translateY(4px);/* ホバー時のボタンの縮み */
+}
+/* カード出すボタン */
+#pass-button{
+    position: static;
+
+    --button-color: rgb(123, 2, 2);
+    width: clamp(45px, 6vw, 55px);
+    height: 40px;
+
+    color: rgb(224, 231, 9);/* ボタンの文字色 */
+    font-size: clamp(0.7rem, 1.4vw, 0.8rem);/* ボタンの文字サイズ */
+}
+#play-button:active{
+    transform: scale(0.99) translateY(4px);/* ホバー時のボタンの縮み */
 }
 
 /*=== ルール設定画面 ===*/

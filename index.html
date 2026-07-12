@@ -36,24 +36,32 @@
                 maxlength="12"
                 spellcheck="false">
 
-            <button id="start-button" class="button">スタート</button>
+            <div id="title-button-area" class="button-area">
+                <button id="start-solo-button" class="button">ひとりで</button>
+                <button id="start-multi-button" class="button">みんなと(N/I)</button>
+            </div>
+
             <button id="rule-button" class="button">ルール設定</button>
         </div>
 
         <!-- ゲーム画面 -->
         <div id="game-screen" class="screen hidden">
             <!-- インフォメーションエリア -->
-            <div id="info-area" class="area">
-                <div id="turn"></div>
+            <div id="info-area-frame" class="wood-like">
+                <div id="info-area" class="area">
+                    <div id="turn"></div>
 
-                <div id="other-players"></div>
+                    <div id="other-players"></div>
 
-                <div id="field-effect"></div>
+                    <div id="field-effect"></div>
+                </div>
             </div>
 
             <!-- 場 -->
-            <div id="field" class="area">
-                <!-- 出されたカードを表示 -->
+            <div id="field-frame" class="wood-like">
+                <div id="field" class="area">
+                    <!-- 出されたカードを表示 -->
+                </div>
             </div>
 
             <!-- プレイヤー領域 -->
@@ -63,9 +71,10 @@
                     <!-- 手札カード -->
                 </div>
 
-                <button id="play-button" class="button">
-                    出す
-                </button>
+                <div id="game-button-area" class="button-area">
+                    <button id="play-button" class="button">出す</button>
+                    <button id="pass-button" class="button">パス</button>
+                </div>
             </div>
             
             <button id="back-to-title-button" class="button">タイトル</button>

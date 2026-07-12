@@ -1,6 +1,8 @@
 /* gameScreen.css */
 #game-screen{
-    background-color: green;
+    background-image: url(../../images/background/green_diamond_PC.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #player-name{
@@ -18,19 +20,16 @@
     border-radius: 12px;
 }
 
-#info-area{
+#info-area-frame{
     position: absolute;
     top: 10%;
     left: 50%;
     width: clamp(120px, 80%, 600px);
     height: 20%;
     transform: translate(-50%, -50%);
-
-    background-color: rgb(10,74,10);
-    border: 2px solid rgb(95, 56, 56);   /* 縁取り */
 }
 
-#field{
+#field-frame{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -41,9 +40,7 @@
     background-color: rgb(10,74,10);
 
     border-radius: 50%;
-    border: 2px solid rgb(95, 56, 56);   /* 縁取り */
-
-    gap: -10px;
+    gap: -5px;
 }
 
 #player-area{

@@ -1,6 +1,13 @@
 /* titleScreen.css */
 #title-screen{
-    background-color: rgb(95,101,212);
+    background-image: url("../../images/background/black_red_check_PC.jpg");
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width: 600px) {
+    #title-screen{
+        background-image: url("../../images/background/black_red_check_Phone.jpg");
+    }
 }
 
 #title{
@@ -15,8 +22,8 @@
     color: gold;
 
     text-shadow:
-        0 3px 0 rgb(92,0,0),
-        0 6px 12px rgba(0,0,0,0.5);
+        2px 2px 0 rgb(75, 75, 75),
+        0 0 10px rgba(255,215,0,0.4);
 }
 
 #name-input{

@@ -42,10 +42,15 @@
     }
 }
 
+.card.red{
+    color: red;
+}
+
 .card.selected{
     transform: translateY(-20px);
 }
 
+/* 半角スペースが重要 */
 #hand .card{
     margin-left: -5px;
 }
