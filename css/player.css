@@ -1,34 +1,33 @@
-/*
-#player-area
-#player-name
-#hand
-*/
+/* player.css */
+.player-box {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 
-#player-area {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    width: 60%;
-    height: 20%;
-    transform: translateX(-50%);
+    width: 100px;
+    height: 70px;
+
+    background: rgba(0,0,0,0.8);
+    color:white;
+
+    border-radius:10px;
+
+    border: 2px solid #888;
+    border-radius: 12px;
+}
+.player-box.current-turn {
+    border-color: rgb(218,185,2);
+
+    box-shadow:
+        0 0 5px rgba(255,215,0,0.7),
+        inset 0 2px 4px rgba(0,0,0,0.15);
 }
 
-#player-name{
-    position: absolute;
-    left: 0%;
-    top: 0;
-    transform: translateX(-50%);
+.player-name{
+
 }
 
-#play-button{
-    position: absolute;
-    right: 30px;
-    bottom: 20px;
-}
+.card-count{
 
-#hand{
-    position: absolute;
-    left: 50%;
-    top: 40px;
-    transform: translateX(-50%);
 }

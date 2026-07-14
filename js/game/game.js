@@ -7,6 +7,7 @@ import { sortHand } from "../utils/sort.js";
 import { renderHand } from "../ui/render/renderHand.js";
 import { getCurrentPlayer } from "./turn.js";
 import { nextTurn } from "./turn.js";
+import { createPlayerBoxes } from "../ui/playerUI.js";
 
 export function startGame(playerName){
     showPlayerName(playerName);
@@ -25,9 +26,10 @@ export function startGame(playerName){
 
     // 山札作成＆ディール
     const shuffledDeck = shuffle([...deck]);
+    let n = Math.floor(Math.random() * 4);
 
     for (let i = 0; i < shuffledDeck.length; i++) {
-        players[i % players.length].hand.push(shuffledDeck[i]);
+        players[(i + n) % players.length].hand.push(shuffledDeck[i]);
     }
 
     for (const player of players) {
@@ -36,8 +38,16 @@ export function startGame(playerName){
 
     renderHand(player);
 
+    const playerPlace = document.getElementById("player-name")
+    const elsePlace = document.getElementById("info-area")
+
+    createPlayerBoxes(players, playerPlace, elsePlace);
+
     const gameButtonArea = document.getElementById("game-button-area");
     const currentPlayer = getCurrentPlayer(players);
+
+    // 現在のプレーヤーを目立たせる
+    currentPlayer.focus();
 
     if(currentPlayer === player){
         gameButtonArea.classList.remove("hidden")
@@ -45,4 +55,6 @@ export function startGame(playerName){
     else{
         gameButtonArea.classList.add("hidden")
     }
+
+//    currentPlayer.blur();
 }

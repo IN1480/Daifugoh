@@ -18,3 +18,11 @@ export function createPlayerBox(player, parent) {
 
     return box;
 }
+
+export function createPlayerBoxes(players, playerPlace, elsePlace) {
+    createPlayerBox(players[0], playerPlace);
+
+    for(let i=1; i<players.length; i++){
+        createPlayerBox(players[i], elsePlace);
+    }
+}

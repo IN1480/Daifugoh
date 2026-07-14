@@ -18,14 +18,11 @@ export function initTitle(){
         const name = input.value.trim() || "プレイヤー";
         localStorage.setItem("playerName", name);
 
-        // プレイヤー作成
-        const player = new Player(name);
-
         // 画面切り替え
         screenManager(title, game);
 
         // ゲーム開始
-        startGame(player);
+        startGame(name);
     });
 
     multiButton.addEventListener("pointerup", () => {
@@ -33,14 +30,11 @@ export function initTitle(){
         const name = input.value.trim() || "プレイヤー";
         localStorage.setItem("playerName", name);
 
-        // プレイヤー作成
-        const player = new Player(name);
-
         // 画面切り替え
         screenManager(title, game);
 
         // ゲーム開始
-        startGame(player);
+        startGame(name);
     });
 
     ruleButton.addEventListener("pointerup", () => {

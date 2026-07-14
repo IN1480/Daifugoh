@@ -4,16 +4,16 @@
 }
 
 #info-area{
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+
     position: absolute;
     top: 10%;
     left: 50%;
-    width: clamp(120px, 80%, 600px);
+    width: 100%;
     height: 20%;
     transform: translate(-50%, -50%);
-
-    background-color: rgb(213, 207, 207);
-    border: 8px solid black;
-    border-radius: 15px;/* 枠の角を丸く */
 }
 
 #player-area{
@@ -30,12 +30,4 @@
     left: 0;
     bottom: 0;
     transform: translate(10%, -30%);
-
-    color: black;
-
-    background: white;
-    padding: 0px 5px;
-
-    border: 2px solid #888;
-    border-radius: 12px;
 }
