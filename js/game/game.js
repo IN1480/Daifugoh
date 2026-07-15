@@ -62,8 +62,11 @@ export function startGame(playerName){
         gameButtonArea.classList.add("hidden")
     }
 
-    // 現在のプレーヤーを目立たせる
-    currentPlayer.focus();
+    // 現在のプレーヤーを強調する
+    playerBoxes.get(currentPlayer)
+    .classList.add("current-turn");
 
-//    currentPlayer.blur();
+    // ターン終わりで強調を解除
+//    playerBoxes.get(currentPlayer)
+//    .classList.remove("current-turn");
 }
