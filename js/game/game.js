@@ -47,8 +47,8 @@ export function startGame(playerName){
     playerBoxes.set(player, box);
 
     for (let i=1; i<players.length; i++) {
-        const box = createPlayerBox(player, elsePlace);
-        playerBoxes.set(player, box);
+        const box = createPlayerBox(players[i], elsePlace);
+        playerBoxes.set(players[i], box);
     }
 
     // 自分のターンでないときは、パス/出すボタンを隠す
