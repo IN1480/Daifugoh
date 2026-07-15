@@ -11,7 +11,7 @@
     border-radius: 3px;
     border: 1px solid black;
 
-    font-size: 1vw;
+    font-size: clamp(8px, 1vw, 15px);
 
     cursor: pointer;
 }
@@ -33,7 +33,6 @@
     width: 2ch;
     text-align: center;
     
-    font-size: clamp(8px, 1vw, 15px)
 }
 @media (max-width: 600px) {
     .card {

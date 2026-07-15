@@ -7,7 +7,7 @@ import { sortHand } from "../utils/sort.js";
 import { renderHand } from "../ui/render/renderHand.js";
 import { getCurrentPlayer } from "./turn.js";
 import { nextTurn } from "./turn.js";
-import { createPlayerBoxes } from "../ui/playerUI.js";
+import { createPlayerBox } from "../ui/playerUI.js";
 
 export function startGame(playerName){
     showPlayerName(playerName);
@@ -41,13 +41,19 @@ export function startGame(playerName){
     const playerPlace = document.getElementById("player-name")
     const elsePlace = document.getElementById("info-area")
 
-    createPlayerBoxes(players, playerPlace, elsePlace);
+    const playerBoxes = new Map();
 
+    const box = createPlayerBox(player, playerPlace);
+    playerBoxes.set(player, box);
+
+    for (let i=1; i<players.length; i++) {
+        const box = createPlayerBox(player, elsePlace);
+        playerBoxes.set(player, box);
+    }
+
+    // 自分のターンでないときは、パス/出すボタンを隠す
     const gameButtonArea = document.getElementById("game-button-area");
     const currentPlayer = getCurrentPlayer(players);
-
-    // 現在のプレーヤーを目立たせる
-    currentPlayer.focus();
 
     if(currentPlayer === player){
         gameButtonArea.classList.remove("hidden")
@@ -55,6 +61,9 @@ export function startGame(playerName){
     else{
         gameButtonArea.classList.add("hidden")
     }
+
+    // 現在のプレーヤーを目立たせる
+    currentPlayer.focus();
 
 //    currentPlayer.blur();
 }
